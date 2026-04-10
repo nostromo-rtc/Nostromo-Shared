@@ -1,11 +1,11 @@
 
 export type HttpMethod = "GET" | "OPTIONS" | "POST" | "PATCH" | "HEAD";
 
-export const enum FileServiceConstants
+export const FileServiceConstants =
 {
-    TUS_VERSION = "1.0.0",
-    FILES_ROUTE = "/files"
-}
+    TUS_VERSION: "1.0.0",
+    FILES_ROUTE: "/files"
+} as const;
 
 interface Dict<T>
 {

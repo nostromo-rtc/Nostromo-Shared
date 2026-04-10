@@ -1,5 +1,22 @@
 import { types as MediasoupTypes } from "mediasoup-client";
 
+const BINARY_THOUSAND = 1024;
+
+export const PrefixConstants = {
+    KILO: BINARY_THOUSAND,
+    MEGA: BINARY_THOUSAND * BINARY_THOUSAND,
+    GIGA: BINARY_THOUSAND * BINARY_THOUSAND * BINARY_THOUSAND,
+} as const;
+
+export const VideoCodec =
+{
+    VP9: 'VP9',
+    VP8: 'VP8',
+    H264: 'H264'
+} as const;
+
+export type VideoCodec = (typeof VideoCodec)[keyof typeof VideoCodec];
+
 /** Публичная информация о комнате. */
 export interface PublicRoomInfo
 {
@@ -75,18 +92,3 @@ export interface ChatFileInfo
     name: string;
     size: number;
 };
-
-/** Видеокодек. */
-export const enum VideoCodec
-{
-    VP9 = 'VP9',
-    VP8 = 'VP8',
-    H264 = 'H264'
-}
-
-export const enum PrefixConstants
-{
-    KILO = 1024,
-    MEGA = 1024 * 1024,
-    GIGA = 1024 * 1024 * 1024
-}
