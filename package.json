@@ -1,13 +1,13 @@
 {
   "name": "nostromo-shared",
-  "version": "0.4.0-dev",
+  "version": "0.5.0-dev",
   "description": "Shared TypeScript typings for Nostromo and Nostromo Web",
   "author": "SgAkErRu",
-  "license": "BSD-3-Clause",
-  "homepage": "https://gitlab.com/SgAkErRu/nostromo-shared",
+  "license": "BSD-2-Clause",
+  "homepage": "https://gitlab.com/nostromo-rtc/nostromo-shared",
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/SgAkErRu/nostromo-shared.git"
+    "url": "git+https://gitlab.com/nostromo-rtc/nostromo-shared.git"
   },
   "dependencies": {
     "mediasoup-client": "3.15.7"
