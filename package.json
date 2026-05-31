@@ -2,6 +2,10 @@
   "name": "nostromo-shared",
   "version": "0.5.0-dev",
   "description": "Shared TypeScript typings for Nostromo and Nostromo Web",
+  "scripts": {
+    "build": "tsc -p types/tsconfig.json",
+    "prepare": "npm run build"
+  },
   "author": "SgAkErRu",
   "license": "BSD-2-Clause",
   "homepage": "https://gitlab.com/nostromo-rtc/nostromo-shared",
@@ -11,5 +15,8 @@
   },
   "dependencies": {
     "mediasoup-client": "3.15.7"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
   }
 }

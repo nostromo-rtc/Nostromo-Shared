@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "node16",
+        "target": "es2017",
+        "allowJs": true,
+        "experimentalDecorators": true,
+        "strict": true,
+        "sourceMap": false,
+        "noEmitOnError": true,
+        "skipLibCheck": true
+    },
+    "include": [
+        "*.ts"
+    ]
+}
