@@ -1,15 +1,18 @@
 {
   "name": "nostromo-shared",
-  "version": "0.4.0-dev",
+  "version": "0.5.0-dev",
   "lockfileVersion": 2,
   "requires": true,
   "packages": {
     "": {
       "name": "nostromo-shared",
-      "version": "0.4.0-dev",
-      "license": "BSD-3-Clause",
+      "version": "0.5.0-dev",
+      "license": "BSD-2-Clause",
       "dependencies": {
         "mediasoup-client": "3.15.7"
+      },
+      "devDependencies": {
+        "typescript": "^4.9.5"
       }
     },
     "node_modules/@lukeed/csprng": {
@@ -177,6 +180,19 @@
       "funding": {
         "url": "https://github.com/chalk/supports-color?sponsor=1"
       }
+    },
+    "node_modules/typescript": {
+      "version": "4.9.5",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz",
+      "integrity": "sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==",
+      "dev": true,
+      "bin": {
+        "tsc": "bin/tsc",
+        "tsserver": "bin/tsserver"
+      },
+      "engines": {
+        "node": ">=4.2.0"
+      }
     }
   },
   "dependencies": {
@@ -284,6 +300,12 @@
       "version": "10.2.2",
       "resolved": "https://registry.npmjs.org/supports-color/-/supports-color-10.2.2.tgz",
       "integrity": "sha512-SS+jx45GF1QjgEXQx4NJZV9ImqmO2NPz5FNsIHrsDjh2YsHnawpan7SNQ1o8NuhrbHZy9AZhIoCUiCeaW/C80g=="
+    },
+    "typescript": {
+      "version": "4.9.5",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz",
+      "integrity": "sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==",
+      "dev": true
     }
   }
 }
