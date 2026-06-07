@@ -33,11 +33,19 @@ export interface RoomInfo extends PublicRoomInfo
     symmetricMode: boolean;
 }
 
-/** Информация о пользователе. */
-export type UserInfo = {
-    id: string,
+/** Information about user. */
+export interface UserInfo
+{
+    id: string;
     name: string;
-};
+}
+
+export type UserRole = "admin" | "user";
+
+export interface UserInfoWithRole extends UserInfo
+{
+    role: UserRole;
+}
 
 /** Информация о пользователе, который готов начать обмениваться медиапотоками. */
 export type UserReadyInfo = {
